@@ -11,56 +11,6 @@ a img {border: none;}
 li {list-style: none;}
 address, em, i {font-style: normal;}
 
-
-.modal {
-    background:rgba(0, 0, 0, 0.2);
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top:0;
-    left: 0;
-}
-
-.modal-content{
-    background: #fff;
-    width: 380px;
-    height: 680px;
-    padding: 20px;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.modal-head{
-    height: 54px;
-    padding: 16px 20px;
-    
-    color:#333;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.modal-text h1 {
-    font-size: 26px;
-    font-weight: 600;
-    color: #333;
-    line-height: 1.54;
-    
-}
-
-.modal-text h2 {
-    font-size: 16px;
-    font-weight: 400;
-    color: #666;
-    line-height: 1.5;
-    margin-top: 16px;
-    
-}
-
-
-
 /*layout*/
 .mo {display: none;}
 .en {font-family: 'Exo 2', sans-serif;}
@@ -68,30 +18,26 @@ body {font-family: 'Noto Sans KR', sans-serif; font-size: 14px;}
 .wrap {margin: 0 auto; }
 #skip-nav {position: fixed; left: 0; top: -41px; width: 100%; line-height: 40px; background: #ff8342; color: #fff; text-align: center; border-bottom: #ff0000; transition: all 0.5s;}
 #skip-nav:focus {top: 0;}
-header {position: fixed; top:0; left: 0; width: 100%; height: 50px; line-height: 50px;  background:#237ff8;}
+header {position: fixed; top:0; left: 0; width: 100%; height: 100px; line-height: 100px;  background: rgba(0,0,0,0.2); z-index: 200;}
 .innerHeader{width: 1600px; margin: 0 auto; box-sizing: border-box;  overflow: hidden;}
-.innerHeader .logo {float: left;}
+.innerHeader .logo {float: left; padding-top: 15px;}
 .innerHeader .logo img {width: 100%; height: auto;}
 .innerHeader .gnbMo {display: none;}
 .innerHeader .gnb {float: left; margin-left: 80px; }
 .innerHeader .gnb li {float: left; margin-right: 80px;}
-.innerHeader .gnb li a{display: block; width: 100%; height: 100%; text-align: center; color: #fff; font-size: 14px;}
-/* .innerHeader .gnb li a:hover,.innerHeader .gnb li a:focus {color:#237ff8;} */
-
-
+.innerHeader .gnb li a{display: block; width: 100%; height: 100%; text-align: center; color: #fff; font-size: 16px;}
+.innerHeader .gnb li a:hover,.innerHeader .gnb li a:focus {color:#ff8342;}
 .innerHeader .tnb {float: right; }
 .innerHeader .tnb li {float: left; margin-right: 25px;}
-.innerHeader .tnb li a{display:block; width: 100%; height: 100%; text-align: center; font-size: 14px; color: #fff;}
+.innerHeader .tnb li a{display:block; width: 100%; height: 100%; text-align: center; font-size: 16px; color: #fff;}
 .innerHeader .tnb li:nth-child(1) a i,.innerHeader .tnb li:nth-child(2) a i {font-size: 20px; margin-right: 8px;}
-/* .innerHeader .tnb li:last-child a {display: block; width: 105px; line-height: 2; border: 1px solid #fff; border-radius: 30px; margin-top: 35px; }
+.innerHeader .tnb li:last-child a {display: block; width: 105px; line-height: 2; border: 1px solid #fff; border-radius: 30px; margin-top: 35px; }
 .innerHeader .tnb li:last-child a i {margin-left: 5px;}
-.innerHeader .tnb li:last-child a:hover {background: #fff; color:#237ff8; transition: all 0.3s; } */
+.innerHeader .tnb li:last-child a:hover {background: #fff; color:#ff8342; transition: all 0.3s; }
 
 /*section.main*/
-/* section.main {width: 100%; height: 100vh; background: url(../img/vis_4.jpg)no-repeat center/cover; position: relative; background-attachment: fixed;} */
-section.main {width: 100%; height: 100vh; position: relative; background-attachment: fixed;}
-
-section.main .mainTitle {position: absolute; top:50%; left:50%; transform: translate(-50%, -50%); color:black; text-align: center; text-shadow: 0 0 5px rgba(8, 8, 8, 0.5); animation-name: mainTitle; animation-duration: 1s;}
+section.main {width: 100%; height: 100vh; background: url(../img/vis_4.jpg)no-repeat center/cover; position: relative; background-attachment: fixed;}
+section.main .mainTitle {position: absolute; top:50%; left:50%; transform: translate(-50%, -50%); color: #fff; text-align: center; text-shadow: 0 0 5px rgba(8, 8, 8, 0.5); animation-name: mainTitle; animation-duration: 1s;}
 @keyframes mainTitle {
     0%{opacity: 0; top: 60%;}
     30%{opacity: 0; top: 60%;}
@@ -99,8 +45,8 @@ section.main .mainTitle {position: absolute; top:50%; left:50%; transform: trans
 }
 section.main .mainTitle h2{ font-size: 55px; margin-bottom: 20px;}
 section.main .mainTitle p {font-size: 25px; margin-bottom: 30px;}
-section.main .mainTitle .view {display: block; width: 180px; margin: 0 auto; padding: 8px 0;font-size:15px; text-transform: uppercase; letter-spacing: 1px; border: 1px solid black; border-radius: 40px; position: relative; overflow: hidden;}
-section.main .mainTitle .view:after {content: ''; width:0; height: 100%; background: rgba(255, 255, 255, 0.6); position: absolute; left: 0; top: 0;}
+section.main .mainTitle .view {display: block; width: 180px; margin: 0 auto; padding: 8px 0;font-size:15px; text-transform: uppercase; letter-spacing: 1px; border: 1px solid #fff; border-radius: 40px; position: relative; overflow: hidden;}
+section.main .mainTitle .view:after {content: ''; width:0; height: 100%; background: rgba(255, 255, 255, 0.4); position: absolute; left: 0; top: 0;}
 section.main .mainTitle .view:hover:after {width: 100%; transition: all 0.3s;}
 
 /*section .title*/
