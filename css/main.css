@@ -36,7 +36,8 @@ header {position: fixed; top:0; left: 0; width: 100%; height: 100px; line-height
 .innerHeader .tnb li:last-child a:hover {background: #fff; color:#ff8342; transition: all 0.3s; }
 
 /*section.main*/
-section.main {width: 100%; height: 100vh; background: url(../img/vis_4.jpg)no-repeat center/cover; position: relative; background-attachment: fixed;}
+section.main {width: 100%; height: 100vh; background: url(../img/main.jpg)no-repeat center/cover; position: relative; }
+/* section.main {width: 100%; height: 100vh; background: url(../img/main.jpg)no-repeat center/cover; position: relative; background-attachment: fixed;} */
 section.main .mainTitle {position: absolute; top:50%; left:50%; transform: translate(-50%, -50%); color: #fff; text-align: center; text-shadow: 0 0 5px rgba(8, 8, 8, 0.5); animation-name: mainTitle; animation-duration: 1s;}
 @keyframes mainTitle {
     0%{opacity: 0; top: 60%;}
